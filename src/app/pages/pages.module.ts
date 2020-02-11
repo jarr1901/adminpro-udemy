@@ -2,6 +2,7 @@
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
+import { ChartsModule } from 'ng2-charts';
 
 // Routes
 import { PagesRoutingModule } from './pages-routing.module';
@@ -12,6 +13,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProgressComponent } from './progress/progress.component';
 import { Graficas1Component } from './graficas1/graficas1.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+import { GraficaDonaComponent } from '../components/grafica-dona/grafica-dona.component';
+
 
 @NgModule({
     declarations: [
@@ -19,7 +22,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         DashboardComponent,
         ProgressComponent,
         Graficas1Component,
-        IncrementadorComponent
+        IncrementadorComponent,
+        GraficaDonaComponent
     ],
     exports: [
         DashboardComponent,
@@ -29,7 +33,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
     imports: [
         SharedModule,
         PagesRoutingModule,
-        FormsModule
+        FormsModule,
+        ChartsModule
     ]
 })
 
